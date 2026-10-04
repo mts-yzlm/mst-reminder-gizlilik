@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MST Reminder — Gizlilik Politikası</title>
+<meta name="description" content="MST Reminder uygulamasının gizlilik politikası. Uygulama hiçbir kullanıcı verisi toplamaz.">
+<style>
+  :root {
+    --zemin: #ffffff;
+    --yazi: #1a1d21;
+    --soluk: #5c6670;
+    --cizgi: #e3e7ea;
+    --vurgu: #1f6a9e;
+    --kutu: #f5f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --zemin: #15181b;
+      --yazi: #e8ecef;
+      --soluk: #9aa4ad;
+      --cizgi: #2a2f34;
+      --vurgu: #6ab3e0;
+      --kutu: #1c2126;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--zemin);
+    color: var(--yazi);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .sayfa { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  header { border-bottom: 1px solid var(--cizgi); padding-bottom: 28px; margin-bottom: 36px; }
+  .logo {
+    width: 60px; height: 60px; border-radius: 14px;
+    background: linear-gradient(160deg, #1f6a9e, #0c3454);
+    color: #fff; display: flex; align-items: center; justify-content: center;
+    font-size: 34px; font-weight: 700; margin-bottom: 18px;
+  }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 6px; }
+  .tarih { color: var(--soluk); font-size: 15px; margin: 0; }
+  h2 { font-size: 20px; margin: 38px 0 12px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--vurgu); }
+  .ozet {
+    background: var(--kutu); border-left: 3px solid var(--vurgu);
+    padding: 16px 18px; border-radius: 0 8px 8px 0; margin-bottom: 8px;
+  }
+  .ozet p { margin: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 16px; font-size: 16px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--cizgi); vertical-align: top; }
+  th { font-weight: 600; white-space: nowrap; }
+  .ayrac { border: 0; border-top: 1px solid var(--cizgi); margin: 56px 0 44px; }
+  .dil { color: var(--soluk); font-size: 14px; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--cizgi); color: var(--soluk); font-size: 15px; }
+  @media (max-width: 520px) {
+    .sayfa { padding: 36px 16px 60px; }
+    h1 { font-size: 24px; }
+    th, td { padding: 8px 6px; }
+    th { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="sayfa">
+
+<header>
+  <div class="logo">R</div>
+  <h1>MST Reminder — Gizlilik Politikası</h1>
+  <p class="tarih">Son güncelleme: 5 Ekim 2026</p>
+</header>
+
+<div class="ozet">
+  <p><strong>MST Reminder hiçbir kullanıcı verisi toplamaz, saklamaz veya aktarmaz.</strong>
+  Girdiğiniz bütün bilgiler yalnızca kendi telefonunuzda kalır.</p>
+</div>
+
+<h2>Hangi veriler işleniyor</h2>
+<p>Uygulamaya şunları girebilirsiniz:</p>
+<ul>
+  <li>Ürün ismi</li>
+  <li>Firma ismi</li>
+  <li>Yazının geliş tarihi ve cevap süresi</li>
+  <li>Açıklama notu</li>
+  <li>Bilgileri otomatik okutmak için bir fotoğraf veya PDF dosyası</li>
+</ul>
+<p>Bu bilgilerin tamamı telefonun kendi deposunda, uygulamaya ait özel alanda
+tutulur. Sunucuya gönderilmez, yedeklenmez, paylaşılmaz.</p>
+
+<h2>Belgeler saklanmıyor</h2>
+<p>Fotoğraf veya PDF yüklediğinizde dosya yalnızca içindeki metni okumak için
+kullanılır ve <strong>okuma biter bitmez silinir</strong>. Belgenin kendisi
+uygulamada tutulmaz.</p>
+
+<h2>Metin okuma nerede yapılıyor</h2>
+<p>Fotoğraf ve belgelerden metin okuma işlemi <strong>telefonun içinde</strong>
+yapılır. Bunun için Google'ın ML Kit kütüphanesi kullanılır ve tanıma modeli
+uygulamanın içine gömülüdür; belgeleriniz hiçbir sunucuya yüklenmez, internet
+bağlantısı olmadan da çalışır.</p>
+<p>Şunu açıkça belirtmek isteriz: bu kütüphane Google Play Services
+bileşenleriyle birlikte gelir ve bu yüzden uygulama internet izni ister.
+Google, kendi kütüphanesine ait anonim teknik tanılama verisi toplayabilir.
+Bu veri sizin girdiğiniz kayıtları, fotoğrafları veya belgeleri
+<strong>içermez</strong>.</p>
+
+<h2>Hesap yok</h2>
+<p>Uygulamada kullanıcı adı, şifre veya hesap oluşturma yoktur. Kimliğinizi
+doğrulamamız gerekmediği için e-posta adresinizi veya başka bir kişisel
+bilginizi istemiyoruz.</p>
+
+<h2>İzinler ve ne için kullanıldıkları</h2>
+<table>
+  <tr><th>İzin</th><th>Neden gerekli</th></tr>
+  <tr><td>Bildirim</td><td>Cevap süresi dolmadan önce hatırlatma göstermek</td></tr>
+  <tr><td>Alarm / kesin zamanlama</td><td>Hatırlatmanın seçtiğiniz saatte gelmesi</td></tr>
+  <tr><td>Kamera</td><td>Bakanlık yazısının fotoğrafını çekmek (isteğe bağlı)</td></tr>
+  <tr><td>Fotoğraflar</td><td>Daha önce çekilmiş bir yazı fotoğrafını seçmek (isteğe bağlı)</td></tr>
+  <tr><td>İnternet</td><td>Yalnızca metin tanıma kütüphanesinin gereksinimi; uygulama bu izni veri göndermek için kullanmaz</td></tr>
+</table>
+<p>Kamera ve fotoğraf izinleri yalnızca siz "Belgeden doldur" dediğinizde
+istenir. Vermezseniz uygulama çalışmaya devam eder, bilgileri elle
+girersiniz.</p>
+
+<h2>Reklam ve izleme yok</h2>
+<p>Uygulamada reklam, reklam kimliği, kullanım analizi veya üçüncü taraf izleme
+aracı bulunmaz.</p>
+
+<h2>Verilerinizi silme</h2>
+<p>Uygulamayı telefonunuzdan kaldırdığınızda bütün kayıtlarınız silinir. Tek tek
+kayıtları uygulama içinden de silebilirsiniz. Bizde sizden saklanan bir veri
+olmadığı için ayrıca bir silme talebine gerek yoktur.</p>
+
+<h2>Çocuklar</h2>
+<p>Uygulama mesleki kullanıma yöneliktir ve çocuklara yönelik değildir.</p>
+
+<h2>İletişim</h2>
+<p>Gizlilikle ilgili sorularınız için:
+<a href="mailto:mstyazilim.reminder@gmail.com">mstyazilim.reminder@gmail.com</a></p>
+
+<hr class="ayrac">
+
+<div class="dil">English</div>
+<h1>MST Reminder — Privacy Policy</h1>
+<p class="tarih">Last updated: 5 October 2026</p>
+
+<div class="ozet" style="margin-top:20px">
+  <p><strong>MST Reminder does not collect, store, or transmit any user data.</strong>
+  Everything you enter stays on your own device.</p>
+</div>
+
+<h2>What data is processed</h2>
+<p>You may enter: product name, company name, letter arrival date, response
+period, a note, and optionally a photo or PDF used to fill those fields
+automatically. All of it is stored in the app's private storage on your device.
+Nothing is sent to a server, backed up, or shared.</p>
+
+<h2>Documents are not kept</h2>
+<p>When you select a photo or PDF, the file is used only to read the text inside
+it and is <strong>deleted as soon as reading finishes</strong>. The document
+itself is not retained.</p>
+
+<h2>Where text recognition happens</h2>
+<p>Text recognition runs <strong>on your device</strong> using Google's ML Kit
+library, with the recognition model embedded in the app. Your documents are
+never uploaded, and recognition works without an internet connection.</p>
+<p>To be transparent: this library ships with Google Play Services components,
+which is why the app requests internet permission. Google may collect anonymous
+technical diagnostics related to its own library. That data does
+<strong>not</strong> include your records, photos, or documents.</p>
+
+<h2>No accounts</h2>
+<p>There is no sign-up, username, or password. We do not ask for your email
+address or any other personal information.</p>
+
+<h2>Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Notifications</td><td>To remind you before a response deadline</td></tr>
+  <tr><td>Alarms / exact scheduling</td><td>So reminders arrive at the time you chose</td></tr>
+  <tr><td>Camera</td><td>To photograph a letter (optional)</td></tr>
+  <tr><td>Photos</td><td>To pick an existing photo of a letter (optional)</td></tr>
+  <tr><td>Internet</td><td>Required by the text recognition library only; the app does not use it to send data</td></tr>
+</table>
+<p>Camera and photo permissions are requested only when you choose "fill from
+document". If you decline, the app continues to work with manual entry.</p>
+
+<h2>No advertising or tracking</h2>
+<p>The app contains no ads, advertising identifiers, usage analytics, or
+third-party tracking.</p>
+
+<h2>Deleting your data</h2>
+<p>Uninstalling the app removes all of your records. You can also delete
+individual records inside the app. Since we hold no data about you, no deletion
+request is necessary.</p>
+
+<h2>Children</h2>
+<p>The app is intended for professional use and is not directed at children.</p>
+
+<h2>Contact</h2>
+<p>For privacy questions:
+<a href="mailto:mstyazilim.reminder@gmail.com">mstyazilim.reminder@gmail.com</a></p>
+
+<footer>
+  MST Reminder · Sağlık Bakanlığı yazılarına cevap süresi takibi
+</footer>
+
+</div>
+</body>
+</html>
